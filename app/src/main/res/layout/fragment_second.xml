@@ -35,9 +35,10 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_height="76dp"
         android:layout_gravity="center"
+        android:gravity="center_vertical"
         android:orientation="horizontal"
         app:layout_constraintBottom_toTopOf="@+id/button_second"
         app:layout_constraintEnd_toEndOf="parent"
@@ -46,12 +47,14 @@
 
         <EditText
             android:id="@+id/editTextNumber"
-            android:layout_width="wrap_content"
+            android:layout_width="263dp"
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="number"
             android:maxLength="3"
-            android:maxLines="1" />
+            android:maxLines="1"
+            android:textAlignment="center"
+            android:textSize="50sp" />
 
         <TextView
             android:id="@+id/textView3"
@@ -59,6 +62,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/unit_metter"
+            android:textAlignment="textEnd"
             android:textColor="@color/black"
             android:textSize="18sp"
             android:textStyle="bold" />
