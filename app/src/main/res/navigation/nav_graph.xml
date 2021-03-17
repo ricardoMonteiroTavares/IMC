@@ -22,7 +22,17 @@
         tools:layout="@layout/fragment_second">
 
         <action
-            android:id="@+id/action_SecondFragment_to_FirstFragment"
+            android:id="@+id/action_SecondFragment_to_WeightFragmentPage"
+            app:destination="@id/WeightFragmentPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/WeightFragmentPage"
+        android:name="com.ricardo.imc.WeightFragmentPage"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/weight_fragment_page">
+
+        <action
+            android:id="@+id/action_WeightFragmentPage_to_FirstFragment"
             app:destination="@id/FirstFragment" />
     </fragment>
 </navigation>
