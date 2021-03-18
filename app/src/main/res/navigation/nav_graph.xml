@@ -30,9 +30,17 @@
         android:name="com.ricardo.imc.WeightFragmentPage"
         android:label="@string/second_fragment_label"
         tools:layout="@layout/weight_fragment_page">
-
         <action
-            android:id="@+id/action_WeightFragmentPage_to_FirstFragment"
+            android:id="@+id/action_WeightFragmentPage_to_ResultPage"
+            app:destination="@id/ResultPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/ResultPage"
+        android:name="com.ricardo.imc.ResultPage"
+        android:label="fragment_result_page"
+        tools:layout="@layout/fragment_result_page" >
+        <action
+            android:id="@+id/action_ResultPage_to_FirstFragment"
             app:destination="@id/FirstFragment" />
     </fragment>
 </navigation>
