@@ -13,7 +13,7 @@
         android:id="@+id/button_second"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="148dp"
+        android:layout_marginBottom="140dp"
         android:backgroundTint="@color/black"
         android:text="@string/btn_calculate"
         android:textAllCaps="false"
@@ -37,9 +37,11 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
-        android:layout_width="300dp"
+        android:layout_width="0dp"
         android:layout_height="76dp"
         android:layout_gravity="center"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
         android:gravity="center_vertical"
         android:orientation="horizontal"
         app:layout_constraintBottom_toTopOf="@+id/button_second"
@@ -49,7 +51,7 @@
 
         <EditText
             android:id="@+id/editTextNumber"
-            android:layout_width="263dp"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="numberDecimal"
@@ -63,7 +65,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/unit_weight"
-            android:textAlignment="textEnd"
+            android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="18sp"
             android:textStyle="bold" />
