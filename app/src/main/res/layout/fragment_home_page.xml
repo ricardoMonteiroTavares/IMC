@@ -8,18 +8,18 @@
     tools:context=".pages.HomePage">
 
     <TextView
-        android:id="@+id/textview_first"
+        android:id="@+id/subtitle"
         android:layout_width="283dp"
         android:layout_height="37dp"
         android:text="@string/subtitle"
         android:textAlignment="center"
-        app:layout_constraintBottom_toTopOf="@id/button_first"
+        app:layout_constraintBottom_toTopOf="@id/btn_init"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button_first"
+        android:id="@+id/btn_init"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#000000"
@@ -29,11 +29,11 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textview_first"
+        app:layout_constraintTop_toBottomOf="@id/subtitle"
         app:strokeColor="#FFFFFF" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/app_name"
         android:layout_width="151dp"
         android:layout_height="68dp"
         android:text="@string/app_name"
@@ -41,7 +41,7 @@
         android:textColor="@color/black"
         android:textSize="48sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/textview_first"
+        app:layout_constraintBottom_toTopOf="@+id/subtitle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
