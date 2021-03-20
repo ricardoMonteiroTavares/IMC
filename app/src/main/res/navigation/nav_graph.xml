@@ -7,9 +7,9 @@
 
     <fragment
         android:id="@+id/FirstFragment"
-        android:name="com.ricardo.imc.FirstFragment"
+        android:name="com.ricardo.imc.pages.HomePage"
         android:label="@string/first_fragment_label"
-        tools:layout="@layout/fragment_first">
+        tools:layout="@layout/fragment_home_page">
 
         <action
             android:id="@+id/action_FirstFragment_to_SecondFragment"
@@ -17,9 +17,9 @@
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
-        android:name="com.ricardo.imc.SecondFragment"
+        android:name="com.ricardo.imc.pages.HeightPage"
         android:label="@string/second_fragment_label"
-        tools:layout="@layout/fragment_second">
+        tools:layout="@layout/fragment_height_page">
 
         <action
             android:id="@+id/action_SecondFragment_to_WeightFragmentPage"
@@ -27,16 +27,16 @@
     </fragment>
     <fragment
         android:id="@+id/WeightFragmentPage"
-        android:name="com.ricardo.imc.WeightFragmentPage"
+        android:name="com.ricardo.imc.pages.WeightPage"
         android:label="@string/second_fragment_label"
-        tools:layout="@layout/weight_fragment_page">
+        tools:layout="@layout/fragment_weight_page">
         <action
             android:id="@+id/action_WeightFragmentPage_to_ResultPage"
             app:destination="@id/ResultPage" />
     </fragment>
     <fragment
         android:id="@+id/ResultPage"
-        android:name="com.ricardo.imc.ResultPage"
+        android:name="com.ricardo.imc.pages.ResultPage"
         android:label="fragment_result_page"
         tools:layout="@layout/fragment_result_page" >
         <action
